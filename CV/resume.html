@@ -8,6 +8,16 @@
   </head>
 
   <body>
+    <div class=" navbar flex scroll">
+      <div onclick="scrollToSection('experience')">EXPERIENCE</div>
+      <div onclick="scrollToSection('projects')">PROJECTS</div>
+      <div onclick="scrollToSection('skills')">SKILLS</div>
+      <div onclick="scrollToSection('achievements')">ACHIEVEMENTS</div>
+      <div onclick="scrollToSection('education')">EDUCATION</div>
+      <div onclick="scrollToSection('coursework')">COURSEWORK</div>
+      <div onclick="scrollToSection('participation')">PARTICIPATION AND INTERESTS</div>
+    </div>
+    <hr class="divide">
     <div class="personalInfo">
       <h1 id="fullname" class="blue">SAMUEL PADAMADAN</h1>
       <div class="links">
@@ -16,7 +26,7 @@
         <p> <b>github.com/SamOp22</b></p>
       </div>
     </div>
-    <div class="experience ">
+    <div id="experience" class="experience ">
       <h2 class="blue">EXPERIENCE</h2>
       <div class="tab flex">
         <h2>
@@ -29,7 +39,7 @@
         Tech App. Tech stack - React , Node JS , Html , Css , Javascript
       </p>
     </div>
-    <div class="projects">
+    <div id="projects" class="projects">
       <h2 class="blue">PROJECTS</h2>
       <div class="tab">
         <div class="flex">
@@ -66,7 +76,7 @@
         </p>
       </div>
     </div>
-    <div class="skills">
+    <div  id="skills" class="skills">
         <h2 class="blue">SKILLS</h2>
         <div class="tab">
           
@@ -77,7 +87,7 @@
         </div>
         
     </div>
-    <div class="achievements">
+    <div id="achievements" class="achievements">
         <h2 class="blue">ACHIEVEMENTS</h2>
         <div class="tab">
         <p class="size">❖ National level Finalist <b>GeeksforGeeks</b> Solving for India
@@ -85,7 +95,7 @@
         <p class="size">❖ Secured 3rd rank in semester 6</p>
     </div>
     </div>
-    <div class="education">
+    <div id="education" class="education">
         <h2 class="blue">EDUCATION</h2>
         <div class="tab">
         <div class="flex">
@@ -102,7 +112,7 @@
         </div>
     </div>
     </div>
-    <div class="coursework">
+    <div class="coursework" id="coursework" >
         <h2 class="blue">COURSEWORK</h2>
         <div class="tab">
       
@@ -111,7 +121,7 @@
         </p>
     </div>
     </div>
-    <div class="PARTICIPATION AND INTERESTS">
+    <div class="PARTICIPATION AND INTERESTS" id="participation">
         <h2 class="blue">PARTICIPATION AND INTERESTS</h2>
         <div class="tab">
         <p class="size">❖ INNOVATE X | Technical Paper Presentation | 2023</p>
@@ -120,5 +130,11 @@
         <p class="size">❖ Robotics, AR, VR, Mechatronics</p>
     </div>
     </div>
+    
   </body>
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </html>
